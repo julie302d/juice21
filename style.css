@@ -1,0 +1,10 @@
+img,
+svg {
+  vertical-align: middle;
+  width: 100%;
+  height: 12vw;
+}
+
+.bg-light {
+  --bs-bg-opacity: 0;
+}
