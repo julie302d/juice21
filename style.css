@@ -1,10 +1,128 @@
-img,
-svg {
+/* style.css - til dine custom styles */
+
+/**************************************************/
+/* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
+/**************************************************/
+
+html {
+  background-color: #e8dcce;
+}
+
+navbar-brand,
+img {
   vertical-align: middle;
   width: 100%;
   height: 12vw;
 }
 
 .bg-light {
-  --bs-bg-opacity: 0;
+  --bs-bg-opacity: -1;
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+
+:root {
+  --bs-body-bg: transperant;
+}
+
+.navbar-collapse {
+  background-color: #e8dcce;
+  padding: 16px;
+  margin-right: -3vw;
+}
+
+/* Forside */
+
+#hero div {
+  place-items: center;
+}
+
+#hero div * {
+  grid-area: 1 / 1 / -1 / -1;
+}
+
+/* Section 1 */
+
+#section1 {
+  background-color: #f4a5ae;
+}
+/* Section 2 */
+
+.w-100 {
+  height: auto;
+}
+
+/* Section 3 */
+
+#section3 {
+  background-color: #f4efe9;
+}
+
+#section3 h2 {
+  text-align: center;
+}
+
+/* Section 4 */
+#section4 {
+  background-color: #e8dcce;
+}
+
+/* Knap */
+
+.btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+  width: 50%;
+  align-items: center;
+  border-radius: 6.5rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Section 5 */
+
+.pic {
+  align-items: end;
+}
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+}
+
+/* END "sm-" 576px and up */
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+}
+
+/* END "md-" 768px and up */
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+  /* END "lg-" 992px and up */
+}
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+  /* END "xl-" 1200px and up */
+}
+
+/**************************************************/
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/**************************************************/
+@media (min-width: 1400px) {
+  /* END "xxl-" 1400px and up */
 }
