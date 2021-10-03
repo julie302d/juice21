@@ -4,8 +4,33 @@
 /* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
 /**************************************************/
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 html {
   background-color: #e8dcce;
+  overflow-x: hidden;
+}
+
+p,
+li,
+.form-label {
+  font-family: var(--primary-font);
+}
+
+h1 {
+  font-family: var(--third-font);
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #e31c11;
+}
+
+h2,
+h3,
+h5,
+.btn {
+  font-family: var(--secondary-font);
 }
 
 navbar-brand,
@@ -13,6 +38,11 @@ img {
   vertical-align: middle;
   width: 100%;
   height: 12vw;
+}
+
+.logo img {
+  height: auto;
+  width: 100px;
 }
 
 .bg-light {
@@ -25,6 +55,9 @@ img {
 
 :root {
   --bs-body-bg: transperant;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Playfair Display", sans-serif;
+  --third-font: "Abril Fatface", sans-serif;
 }
 
 .navbar-collapse {
@@ -43,11 +76,21 @@ img {
   grid-area: 1 / 1 / -1 / -1;
 }
 
+#hero img {
+  width: 60%;
+}
+
 /* Section 1 */
 
 #section1 {
   background-color: #f4a5ae;
+  padding: 20px;
 }
+
+.section1billede img {
+  width: 180px;
+}
+
 /* Section 2 */
 
 .w-100 {
@@ -90,10 +133,77 @@ button {
   align-items: end;
 }
 
+/* footer */
+
+#footer {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.stribetboks {
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("striber.png");
+}
+
+.hvidboks {
+  background-color: #fff;
+  z-index: 10;
+  position: absolute;
+  top: -54px;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+
+.subknap {
+  margin-bottom: 10vw;
+  width: 100%;
+  background-color: transparent;
+  color: #f4a5ae;
+}
+
+.form-control,
+.subknap {
+  border-radius: 8vw;
+  border: solid 1.5px #f4a5ae;
+}
+
+.btn-primary:hover {
+  background-color: #f4a5ae;
+  color: #fff;
+  border-color: #f4a5ae;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
 @media (min-width: 576px) {
+  #hero h1 {
+    font-size: 5rem;
+  }
+
+  #hero img {
+    width: 55%;
+  }
+
+  #section1 {
+    padding: 50px;
+  }
+
+  #footer {
+    height: 354px;
+  }
 }
 
 /* END "sm-" 576px and up */
@@ -102,6 +212,18 @@ button {
 /* // Medium devices (tablets, 768px and up) */
 /**************************************************/
 @media (min-width: 768px) {
+  .logo img {
+    width: 125px;
+  }
+
+  #hero img {
+    width: 50%;
+  }
+
+  .form-control,
+  .subknap {
+    width: 70%;
+  }
 }
 
 /* END "md-" 768px and up */
@@ -111,6 +233,25 @@ button {
 /**************************************************/
 @media (min-width: 992px) {
   /* END "lg-" 992px and up */
+  .logo img {
+    width: 145px;
+  }
+
+  #section1 {
+    padding: 90px;
+  }
+
+  #hero h1 {
+    font-size: 7rem;
+  }
+
+  #hero img {
+    width: 35%;
+  }
+
+  .hvidboks {
+    min-width: 90%;
+  }
 }
 
 /**************************************************/
@@ -118,6 +259,17 @@ button {
 /**************************************************/
 @media (min-width: 1200px) {
   /* END "xl-" 1200px and up */
+  .logo img {
+    width: 145px;
+  }
+
+  #hero h1 {
+    font-size: 9rem;
+  }
+
+  #hero img {
+    width: 30%;
+  }
 }
 
 /**************************************************/
@@ -125,4 +277,11 @@ button {
 /**************************************************/
 @media (min-width: 1400px) {
   /* END "xxl-" 1400px and up */
+  .logo img {
+    width: 145px;
+  }
+
+  #hero img {
+    width: 25%;
+  }
 }

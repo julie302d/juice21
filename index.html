@@ -18,7 +18,9 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="logo.svg" alt="logo" /></a>
+        <a class="logo navbar-brand" href="#"
+          ><img src="logo.svg" alt="logo"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,7 +42,7 @@
       </div>
     </nav>
 
-    <main class="container">
+    <main>
       <section id="hero" class="row">
         <div class="col-12 d-grid">
           <img class="img-fluid" src="billede1.png" alt="" />
@@ -51,11 +53,15 @@
 
       <section id="section1" class="row mb-4">
         <div class="col-12 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
-          <img class="img-fluid" src="Ellipse.png" alt="billede" />
+          <img
+            class="section1billede img-fluid"
+            src="billede1.png"
+            alt="billede"
+          />
         </div>
 
         <div class="col-12 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
-          <h2>underoverskrift</h2>
+          <h2>Underoverskrift</h2>
           <p>
             TO DO 💛 - Lave indhold (overskrifter og brødtekst) -
             Beslutte/finde/tage billeder - Lave endelige mock ups af juice -
@@ -162,7 +168,9 @@
         <div class="col-6 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
           <img class="img-fluid" src="cirkelpink.png" alt="" />
         </div>
-        <button type="button" class="btn btn-outline-primary">Shop</button>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-primary">Shop</button>
+        </div>
       </section>
 
       <section id="section5" class="row mb-4">
@@ -183,9 +191,66 @@
           <img class="img-fluid" src="cirkelpink.png" alt="" />
         </div>
       </section>
-
-      <section id="footer"></section>
     </main>
+
+    <section id="footer">
+      <div class="stribetboks row"></div>
+      <div class="hvidboks row m-4 pb-4 pt-4">
+        <div class="col-sm-6 col-lg-6">
+          <div>
+            <h3>
+              Never miss out! <br />
+              We’ll sent you juicy news!
+            </h3>
+          </div>
+          <div>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <button type="submit" class="subknap btn btn-primary">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mb-4 col-sm-6 col-lg-6">
+          <div class="col-6">
+            <h5>Kontakt os</h5>
+            <ul>
+              <li>Mail</li>
+              <li>Instagram</li>
+              <li>Mobil</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5>Information</h5>
+            <ul>
+              <li>Job</li>
+              <li>Produkter</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
+          <div>
+            <br />
+            <h5>Følg os</h5>
+            <div class="row mb-4">
+              <div class="col-4"><p>Instagram</p></div>
+              <div class="col-4"><p>Facebook</p></div>
+              <div class="col-4"><p>Tiktok</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
