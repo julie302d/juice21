@@ -17,12 +17,13 @@ p,
 li,
 .form-label {
   font-family: var(--primary-font);
+  font-weight: 100;
 }
 
 h1 {
   font-family: var(--third-font);
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #e31c11;
 }
 
@@ -31,6 +32,10 @@ h3,
 h5,
 .btn {
   font-family: var(--secondary-font);
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 navbar-brand,
@@ -88,7 +93,7 @@ img {
 }
 
 .section1billede {
-  width: 55%;
+  width: 50%;
 }
 
 /* Section 2 */
@@ -112,11 +117,31 @@ img {
   text-align: center;
   padding: 30px;
   padding-top: 65px;
+  color: #e31c11;
+}
+
+#section3 h5 {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+#section3 .tyndskrift {
+  font-weight: 100;
 }
 
 /* Section 4 */
 #section4 {
   background-color: #e8dcce;
+  padding: 45px;
+}
+
+#section4 img {
+  width: 85px;
+}
+
+/* Section 4 web */
+#section4_web {
+  display: none;
 }
 
 /* Knap */
@@ -138,6 +163,10 @@ button {
 
 .pic {
   align-items: end;
+}
+
+#section5 {
+  background-color: #f4efe9;
 }
 
 /* footer */
@@ -199,6 +228,17 @@ ul {
   padding-left: 0;
 }
 
+#footer h3 {
+  line-height: 1.6;
+  padding-bottom: 10px;
+  color: #f4a5ae;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  color: #33262688;
+}
+
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
@@ -209,6 +249,22 @@ ul {
 
   #section1 {
     padding: 50px;
+  }
+
+  #section2 {
+    display: none;
+  }
+
+  #section4 {
+    display: none;
+  }
+
+  #section4_web {
+    display: flex;
+  }
+
+  #section4_web img {
+    width: 80px;
   }
 
   #footer {
@@ -224,6 +280,11 @@ ul {
 @media (min-width: 768px) {
   .logo img {
     width: 125px;
+  }
+
+  #hero h1 {
+    font-size: 7rem;
+    z-index: -1;
   }
 
   #hero img {
@@ -252,7 +313,7 @@ ul {
   }
 
   #hero h1 {
-    font-size: 7rem;
+    font-size: 9rem;
   }
 
   #hero img {
