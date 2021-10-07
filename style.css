@@ -211,7 +211,7 @@ button {
 
 .subknap,
 .btn-outline-primary {
-  margin-bottom: 10vw;
+  /*margin-bottom: 10vw;*/
   width: 100%;
   background-color: transparent;
   color: #f4a5ae;
@@ -349,7 +349,7 @@ ul {
   }
 
   .hvidboks {
-    min-width: 90%;
+    min-width: 95%;
   }
 }
 
