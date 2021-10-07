@@ -9,8 +9,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 html {
-  background-color: #e8dcce;
+  background-color: #f4efe9;
   overflow-x: hidden;
+}
+
+:root {
+  --bs-body-bg: transperant;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Playfair Display", sans-serif;
+  --third-font: "Abril Fatface", sans-serif;
 }
 
 p,
@@ -25,6 +32,10 @@ h1 {
   text-transform: uppercase;
   font-size: 5rem;
   color: #e31c11;
+}
+
+a {
+  font-family: var(--third-font);
 }
 
 h2,
@@ -58,11 +69,8 @@ img {
   align-items: flex-end;
 }
 
-:root {
-  --bs-body-bg: transperant;
-  --primary-font: "Montserrat", sans-serif;
-  --secondary-font: "Playfair Display", sans-serif;
-  --third-font: "Abril Fatface", sans-serif;
+.container-fluid {
+  background-color: #e8dcce;
 }
 
 .navbar-collapse {
@@ -72,6 +80,10 @@ img {
 }
 
 /* Forside */
+
+#hero {
+  background-color: #e8dcce;
+}
 
 #hero div {
   place-items: center;
@@ -239,6 +251,15 @@ ul {
   color: #33262688;
 }
 
+#footer .icons {
+  width: 94%;
+}
+
+#footer img {
+  height: auto;
+  width: 38px;
+}
+
 /**************************************************/
 /* Small devices (landscape phones, 576px and up) */
 /**************************************************/
@@ -270,6 +291,10 @@ ul {
   #footer {
     height: 354px;
   }
+
+  #footer img {
+    max-width: 80%;
+  }
 }
 
 /* END "sm-" 576px and up */
@@ -285,10 +310,12 @@ ul {
   #hero h1 {
     font-size: 7rem;
     z-index: -1;
+    z-index: 0;
   }
 
   #hero img {
     width: 30%;
+    z-index: 1;
   }
 
   .form-control,
@@ -347,5 +374,9 @@ ul {
   /* END "xxl-" 1400px and up */
   .logo img {
     width: 145px;
+  }
+
+  .section1billede {
+    width: 35%;
   }
 }
