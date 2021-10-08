@@ -171,6 +171,36 @@ button {
   justify-content: center;
 }
 
+/* Section 5_1 */
+
+.row1 {
+  display: flex;
+  align-items: flex-end;
+  margin: auto;
+}
+
+.img1 {
+  width: 20vw;
+  height: 20vw;
+}
+
+.img2 {
+  width: 10vw;
+  height: 10vw;
+}
+
+.img3 {
+  width: 25vw;
+  height: 25vw;
+}
+
+/* Section 5_2 */
+
+.row2 {
+  display: flex;
+  align-items: flex-start;
+}
+
 /* Section 5 */
 
 .pic {
