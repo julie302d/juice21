@@ -32,207 +32,255 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse ny_navbar" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">home</a>
-            <a class="nav-link" href="#">shop</a>
-            <a class="nav-link" href="#">recipes</a>
+            <a class="nav-link" href="#section2-web">shop</a>
+            <a class="nav-link" href="#section_cocktails">recipes</a>
           </div>
         </div>
       </div>
     </nav>
 
     <main>
-      <section id="hero" class="row">
-        <div class="col-12 d-grid pt-5 pb-5">
-          <img class="img-fluid" src="appelsinjuice.png" alt="" />
+      <section id="hero" class="row m-0">
+        <div class="col-12 d-grid">
+          <!--- <img class="w-100" src="Forside2.png" alt="" />
+          <img
+            class="img-fluid forsidebillede"
+            src="appelsinjuice.png"
+            alt=""
+          />
 
-          <h1 class="text-center">Orange CPH</h1>
+          <img
+            class="img-fluid forsidebilledetekst"
+            src="roedtekst-01.png"
+            alt=""
+          /> -->
+
+          <!-- <h1 class="forsidetekst">Orange CPH</h1>
+          <button type="button" class="btn forside-knap forside-knap-outline">
+            SHOP
+          </button> -->
+          <div class="grid_section forsidetekst">
+            <div class="box1"><h1>ORANGE</h1></div>
+            <div class="box2">
+              <button
+                type="button"
+                class="btn forside-knap forside-knap-outline"
+              >
+                SHOP
+              </button>
+            </div>
+            <div class="box3"><h1>CPH</h1></div>
+          </div>
         </div>
       </section>
 
-      <section id="section1" class="row">
+      <section id="section1" class="row mb-5">
         <div class="col-12 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0 text-center">
           <img
-            src="BilledeKIJ.png"
+            src="feelingjuicy-01.png"
             class="section1billede img-fluid"
             alt="billede"
             style="width: 60%"
           />
         </div>
 
-        <div class="col-12 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
-          <h2>Fresh fruit, great juice</h2>
+        <div
+          class="
+            tekstboks
+            col-12
+            mb-4
+            col-sm-6 col-lg-6 col-xl-6
+            mb-lg-0
+            align-self-lg-center
+          "
+        >
+          <h2>
+            Fresh fruit, great juice
+            <img src="stjerner.png" alt="" />
+          </h2>
+
           <p>
             Frugt, bær og vitaminer… Findes der en bedre og mere frisk
-            kombination? We think not! Hos Orange cph lægges der kærlighed og
-            friske frugter i hver evig eneste juice. Det er vigtigt for os, at
-            give vores kunder muligheden for at nyde juicen ved morgenbordet
-            samt mixe en cocktail med et twist. Har du ikke prøvet vores juice
-            endnu? Du går seriøst glip af noget!
+            kombination? <i>We think not!</i> Hos ORANGE CPH lægges der
+            kærlighed og friske frugter i hver evig eneste juice. Det er vigtigt
+            for os, at give vores kunder muligheden for at nyde juicen ved
+            morgenbordet samt mixe en cocktail med et twist. Har du ikke prøvet
+            vores juice endnu? Du går glip af noget!
           </p>
         </div>
       </section>
 
-      <section id="section2" class="row">
-        <div
-          id="carouselWithCaptions"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-bs-target="#carouselWithCaptions"
-              data-bs-slide-to="0"
-              class=""
-            ></li>
-            <li
-              data-bs-target="#carouselWithCaptions"
-              data-bs-slide-to="1"
-              class="active"
-              aria-current="true"
-            ></li>
-            <li
-              data-bs-target="#carouselWithCaptions"
-              data-bs-slide-to="2"
-              class=""
-            ></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <img src="flaske1.png" class="w-100" alt="Slide 1" />
-              <div class="carousel-caption">
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item active">
-              <img src="flaske2.png" class="w-100" alt="Slide 2" />
-              <div class="carousel-caption">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="flaske3.png" class="w-100" alt="Slide 3" />
-              <div class="carousel-caption">
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </div>
+      <section id="section2-web" class="row fluid-continer">
+        <div class="col-sm-4 p-0 container_hover">
+          <img
+            src="OrangeJuice.png"
+            class="img-fluid image_hover"
+            alt="juice"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>The OG</h3>
+              <h5>Orange</h5>
+              <!-- <button type="button" class="btn knap knap-outline">Shop</button> -->
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselWithCaptions"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselWithCaptions"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+        </div>
+        <div class="col-sm-4 p-0 container_hover">
+          <img src="KiwiLimeee.png" class="img-fluid image_hover" alt="juice" />
+          <div class="overlay">
+            <div class="text">
+              <h3>The greenie</h3>
+              <h5>Kiwi & lime</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-0 container_hover">
+          <img
+            src="MangoPassionsfruit.png"
+            class="img-fluid image_hover"
+            alt="juice"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>The tropical</h3>
+              <h5>Mango & passion</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-0 container_hover d-none d-sm-block">
+          <img
+            src="AppleRaspberry.png"
+            class="img-fluid image_hover"
+            alt="juice"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>The Loved</h3>
+              <h5>Apple & raspberry</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-0 container_hover d-none d-sm-block">
+          <img
+            src="PineappleCoconut.png"
+            class="img-fluid image_hover"
+            alt="juice"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>The partystarter</h3>
+              <h5>PINEAPPLE & COCONUT</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 p-0 container_hover d-none d-sm-block">
+          <img
+            src="StrawberryPomegranate.png"
+            class="img-fluid image_hover"
+            alt="juice"
+          />
+          <div class="overlay">
+            <div class="text">
+              <h3>The sweet</h3>
+              <h5>Strawberry & pomgranate</h5>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="section2-web" class="row fluid-continer">
-        <div class="col-sm-4 p-0">
-          <img src="flaske1.png" class="img-fluid" alt="juice" />
-        </div>
-        <div class="col-sm-4 p-0">
-          <img src="flaske2.png" class="img-fluid" alt="juice" />
-        </div>
-        <div class="col-sm-4 p-0">
-          <img src="flaske3.png" class="img-fluid" alt="juice" />
-        </div>
-        <div class="col-sm-4 p-0">
-          <img src="flaske3.png" class="img-fluid" alt="juice" />
-        </div>
-        <div class="col-sm-4 p-0">
-          <img src="flaske1.png" class="img-fluid" alt="juice" />
-        </div>
-        <div class="col-sm-4 p-0">
-          <img src="flaske2.png" class="img-fluid" alt="juice" />
-        </div>
-      </section>
-
-      <section id="section3" class="row p-5 justify-content-center">
+      <section id="section3" class="row p-5 pb-lg-0 justify-content-center">
         <div class="col-12 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0 text-center">
           <h2>The <i class="tyndskrift">simple</i> love story</h2>
         </div>
 
-        <div
-          class="col-12 mb-4 col-sm-12 col-lg-12 col-xl-12 mb-lg-0 text-center"
-        >
-          <h5>
-            01. <br />
-            Opskrift - sådan blander du bla bla bla
-          </h5>
-          <img
-            class="img-fluid"
-            src="frugter.png"
-            alt=""
-            style="width: 600px"
-          />
+        <div class="row">
+          <div
+            class="col-12 col-sm-12 col-lg-6 offset-lg-3 mb-lg-0 text-center"
+          >
+            <h5 class="d-lg-none pb-4">
+              <b class="fedtekst">01.</b> Fresh fruit and berries
+            </h5>
+            <img
+              class="img-fluid section_frugt"
+              src="frugterendelig.png"
+              alt=""
+              style="width: 300px"
+            />
+          </div>
+
+          <div
+            class="d-none d-lg-block col-lg-3 align-self-lg-center tekst_frugt"
+          >
+            <img
+              src="tekstfrugt.png"
+              style="width: 24vw; height: auto"
+              alt=""
+            />
+          </div>
         </div>
-        <h5>
-          02.
-          <br />
-          Opskrift - sådan blander du bla bla bla
-        </h5>
-        <div class="col-12 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
-          <img class="img-fluid" src="cirkelpink.png" alt="" />
+
+        <div class="row section_vand">
+          <div
+            class="d-none d-lg-block col-lg-3 align-self-lg-center tekst_vand"
+          >
+            <img
+              src="tekstfrugt2.png"
+              style="width: 22vw; height: auto"
+              alt=""
+            />
+          </div>
+
+          <div class="col-12 mb-4 col-sm-12 col-lg-6 mb-lg-0 pt-5 text-center">
+            <h5 class="d-lg-none"><b class="fedtekst">02.</b> Natrual water</h5>
+            <img class="img-fluid" src="vand.png" alt="" style="width: 390px" />
+          </div>
         </div>
       </section>
 
-      <section id="section4" class="row mb-4 text-center">
+      <section id="section4" class="row text-center">
         <div class="col-6 mb-4 col-sm-12 col-lg-12 col-xl-12 mb-lg-0">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin4.png" alt="" />
+          <h6>All natrual</h6>
         </div>
         <div class="col-6 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin3.png" alt="" />
+          <h6>Real juice</h6>
         </div>
         <div class="col-6 mb-4 col-sm-12 col-lg-12 col-xl-12 mb-lg-0">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin1.png" alt="" />
+          <h6>Low sugar</h6>
         </div>
         <div class="col-6 mb-4 col-sm-6 col-lg-6 col-xl-6 mb-lg-0">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin2.png" alt="" />
+          <h6>Low calorie</h6>
         </div>
         <div class="col-12 d-flex justify-content-center">
           <button type="button" class="btn btn-outline-primary">Shop</button>
         </div>
       </section>
 
-      <section
-        id="section4_web"
-        class="row mb-4 p-5 text-center align-items-center"
-      >
+      <section id="section4_web" class="row text-center align-items-center">
         <div class="col-2">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin4.png" alt="" />
+          <h6>All natrual</h6>
         </div>
         <div class="col-2">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin3.png" alt="" />
+          <h6>Real juice</h6>
         </div>
         <div class="col-4">
-          <button type="button" class="btn btn-outline-primary">Shop</button>
+          <button type="button" class="btn btn-outline-primary">shop</button>
         </div>
         <div class="col-2">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin1.png" alt="" />
+          <h6>Low sugar</h6>
         </div>
         <div class="col-2">
-          <img class="img-fluid" src="orange.png" alt="" />
+          <img class="img-fluid" src="appelsin2.png" alt="" />
+          <h6>Low calorie</h6>
         </div>
       </section>
 
@@ -240,30 +288,82 @@
         id="section4_billeder"
         class="row text-center align-items-center"
       >
-        <div class="col-6 col-sm-6 col-lg-6 col-xl-6 mb-lg-0 p-0">
+        <div class="streg d-none d-lg-block"></div>
+        <div class="rrr col-12 col-sm-6 col-lg-6 mb-lg-0 p-0 d-grid">
           <img class="img-fluid" src="billede_section4.png" alt="" />
+          <p>FROM BREAKFAST</p>
         </div>
 
-        <div class="col-6 col-sm-6 col-lg-6 col-xl-6 mb-lg-0 p-0">
+        <div class="rrr col-12 col-sm-6 col-lg-6 mb-lg-0 p-0 d-grid">
           <img class="img-fluid" src="billede_section4_2.png" alt="" />
+          <p>TO COCKTAILS</p>
+        </div>
+      </section>
+
+      <section id="section4_billeder2" class="row">
+        <!-- <div class="col-8 col-md-4 p-0">
+          <img
+            class="juiceflaske img-fluid d-none d-md-block"
+            src="appelsinjuicemedskygge.png"
+            alt=""
+          />
+        </div> -->
+        <div class="aaa col-12 col-lg-6 offset-lg-3 p-5 text-center">
+          <h2>Your everyday <i>to-go</i></h2>
+          <p>
+            Vidste du, at juice fra ORANGE CPH passer perfekt til din morgenmad,
+            men også til din cocktail om aftenen? Den kan bruges til alt og du
+            behøver aldrig gå på kompromis med kvalitet længere. Vores juices er
+            fyldt med de lækreste frugter og bær, som er spækket med vitaminer
+            og energi.
+          </p>
+        </div>
+      </section>
+
+      <section id="section_cocktails">
+        <div class="col-12 text-center">
+          <h2>How to <i class="tyndskrift">cocktail</i></h2>
+        </div>
+        <div class="row mb-4 p-5 pt-5 text-center align-items-center">
+          <div class="col-12 mb-4 col-sm-4 col-lg-4">
+            <h6>01.</h6>
+            <p>glass and ice</p>
+            <img class="img-fluid" src="howto1.jpg" alt="howto1" />
+          </div>
+          <div class="col-12 mb-4 col-sm-4 col-lg-4">
+            <h6>02.</h6>
+            <p>your favorite spirit</p>
+            <img class="img-fluid" src="howto3.jpg" alt="howto2" />
+          </div>
+          <div class="col-12 mb-4 col-sm-4 col-lg-4">
+            <h6>03.</h6>
+            <p>add orange cph juice</p>
+            <img class="img-fluid" src="howto2.jpg" alt="howto3" />
+          </div>
+        </div>
+
+        <div class="col-12 pb-5 text-center">
+          <h5>
+            <i>enjoy</i> <img class="stjerner" src="stjerner.png" alt="" />
+          </h5>
+          <p class="share">
+            <i
+              >share your orange cph moment with us
+              <strong>#teamorange</strong></i
+            >
+          </p>
         </div>
       </section>
 
       <section
-        id="section4_billeder2"
-        class="row text-center align-items-center"
+        id="section5_1"
+        class="row mb-4 pt-5 text-center align-items-center"
       >
-        <div class="col-12 p-0 mb-5">
-          <img class="img-fluid" src="billede_section4.5.png" alt="" />
-        </div>
-      </section>
-
-      <section id="section5_1" class="row mb-4 text-center align-items-center">
         <div class="row1">
           <div class="col-lg-2 ms-3 me-3">
             <img class="img-fluid" src="SoMe1.png" alt="juice" />
           </div>
-          <div class="col-lg-1 me-3">
+          <div class="col-lg-1 me-3 d-none d-lg-block">
             <img class="img-fluid" src="SoMe3.png" alt="juice" />
           </div>
 
@@ -273,7 +373,9 @@
 
           <div class="col-lg-3 me-3">
             <h2>Let’s stay connected!</h2>
-            <h2>Follow us here</h2>
+            <h3>
+              Follow us here <img class="stjerner" src="stjerner.png" alt="" />
+            </h3>
           </div>
         </div>
       </section>
@@ -284,11 +386,11 @@
             <img class="img-fluid" src="SoMe5.png" alt="juice" />
           </div>
 
-          <div class="col-lg-3 me-3">
-            <img class="img-fluid" src="SoMe4.png" alt="juice" />
+          <div class="col-lg-3 me-3 d-none d-lg-block">
+            <img class="img-fluid" src="instabillede.png" alt="juice" />
           </div>
 
-          <div class="col-lg-2 me-3">
+          <div class="col-lg-2 me-3 d-none d-lg-block">
             <img class="img-fluid" src="SoMe6.png" alt="juice" />
           </div>
 
@@ -332,9 +434,9 @@
           <div class="col-6">
             <h5>Kontakt os</h5>
             <ul>
-              <li>Mail</li>
+              <li>Facebook</li>
               <li>Instagram</li>
-              <li>Mobil</li>
+              <li>Mail</li>
             </ul>
           </div>
           <div class="col-6">
@@ -347,7 +449,7 @@
           </div>
           <div>
             <br />
-            <h5>Følg os</h5>
+            <h5 class="pt-0">Følg os</h5>
             <div class="icons row mb-4">
               <div class="col-4">
                 <img src="instagram.png" alt="" />
@@ -372,8 +474,8 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
