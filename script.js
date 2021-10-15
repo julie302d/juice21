@@ -81,7 +81,7 @@ gsap.to(".forsidetekst", {
     trigger: "#hero",
     start: "top 10%",
     end: "bottom top",
-    markers: true,
+    //markers: true,
     scrub: true,
   },
 });
